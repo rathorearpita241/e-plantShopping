@@ -1,23 +1,27 @@
-# Paradise Nursery 🌿
+# e-plantShopping – Paradise Nursery
 
-Paradise Nursery is a responsive online houseplant shopping application built with React, Redux Toolkit, and React Router. Browse curated indoor plant collections, add favourites to your cart, update quantities, and see your order total update instantly.
+Paradise Nursery is an online houseplant shopping application built with React, Redux Toolkit, and Vite. Customers can browse houseplants in three categories, add plants to a shopping cart, change quantities, remove items, and view the updated order total.
 
 ## Features
-- Landing page with a full-screen botanical background image and **Get Started** call to action.
-- About Us section describing the company and its values.
-- Three plant categories with six products in each category.
-- Product cards with images, descriptions, INR prices, and Add to Cart controls.
-- Redux Toolkit cart state with `addItem`, `removeItem`, and `updateQuantity` reducers.
-- Shared navigation with a live cart item count.
-- Cart page with quantity controls, per-item totals, order total, remove controls, checkout notice, and continue shopping link.
-- Responsive layout for desktop and mobile.
+- Paradise Nursery landing page with a botanical background image.
+- Welcome heading and Get Started button to open the product listing.
+- About Us information about Paradise Nursery.
+- Three plant categories with at least six unique plants in each category.
+- Plant thumbnails, names, descriptions, and prices.
+- Add to Cart buttons that become disabled and display Added to Cart after selection.
+- Navigation links for Home, Plants, and Cart.
+- Dynamic shopping-cart item count.
+- Redux reducers: `addItem()`, `removeItem()`, and `updateQuantity()`.
+- Cart page with item images, names, unit prices, quantities, item totals, and overall total.
+- Increment, decrement, and Delete controls.
+- Checkout message and Continue Shopping navigation.
 
-## Tech stack
-- React 18 + Vite
-- Redux Toolkit + React Redux
-- React Router
-- Lucide React icons
+## Technologies
+- React 18
+- Redux Toolkit and React Redux
+- Vite
 - CSS
+- Lucide React icons
 
 ## Run locally
 
@@ -26,19 +30,18 @@ npm install
 npm run dev
 ```
 
-Open the local URL printed by Vite (usually `http://localhost:5173`).
+Open the local URL printed by Vite, usually `http://localhost:5173`.
 
 ## Production build
 
 ```bash
 npm run build
-npm run preview
 ```
 
 ## Project structure
 
 ```text
-paradise-nursery/
+e-plantShopping/
 ├── index.html
 ├── package.json
 ├── README.md
@@ -54,6 +57,3 @@ paradise-nursery/
     ├── main.jsx
     └── store.js
 ```
-
-## Note
-Plant photographs are loaded from Unsplash image URLs and therefore require an internet connection to display.
